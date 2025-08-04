@@ -4,7 +4,6 @@ import Header from './components/Header';
 import SearchBar from './components/SearchBar';
 import MediaGrid from './components/MediaGrid';
 import DownloadQueue from './components/DownloadQueue';
-import ApiKeySetup from './components/ApiKeySetup';
 import { MediaItem, SearchFilters, DownloadItem } from './types';
 import {
   searchPexelsImages,
@@ -189,8 +188,6 @@ function App() {
             All content is completely free to use for personal and commercial projects.
           </p>
         </div>
-
-        <ApiKeySetup />
 
         <div className="mb-8">
           <SearchBar onSearch={handleSearch} loading={loading} />
